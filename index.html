@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уютный Дворик</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="company-name">
+                <a href="index.html">Уютный Дворик</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+            <ul class="nav-links">
+                <li><a href="about.html">О компании</a></li>
+                <!-- <li><a href="#">Услуги</a></li> -->
+                <li><a href="Work.html">Наши проекты</a></li>
+                <!-- <li><a href="#">Отзывы</a></li> -->
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="services.html">Наши услуги</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Секция фильтров -->
+        <section class="filters-section">
+            <h1>Наши услуги</h1>
+            <div class="filters-container">
+                <!-- Фильтр по типу услуги -->
+                <!-- <div class="filter-group">
+                    <h3>Тип услуги</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="type" value="Укладка">
+                            Укладка плитки
+                        </label>
+                        <label>
+                            <input type="checkbox" name="type" value="Проектирование">
+                            Проектирование
+                        </label>
+                        <label>
+                            <input type="checkbox" name="type" value="Ремонт">
+                            Ремонт покрытий
+                        </label>
+                        <label>
+                            <input type="checkbox" name="type" value="Дренаж">
+                            Дренажные системы
+                        </label>
+                    </div>
+                </div> -->
+    
+                <!-- Фильтр по сложности -->
+                <!-- <div class="filter-group">
+                    <h3>Сложность</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="complexity" value="Простая">
+                            Простая
+                        </label>
+                        <label>
+                            <input type="checkbox" name="complexity" value="Средняя">
+                            Средняя
+                        </label>
+                        <label>
+                            <input type="checkbox" name="complexity" value="Сложная">
+                            Сложная
+                        </label>
+                    </div>
+                </div> -->
+    
+                <!-- Фильтр по цене -->
+                <!-- <div class="filter-group">
+                    <h3>Ценовая категория</h3>
+                    <div class="filter-options">
+                        <label>
+                            <input type="checkbox" name="price" value="Эконом">
+                            Эконом
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price" value="Стандарт">
+                            Стандарт
+                        </label>
+                        <label>
+                            <input type="checkbox" name="price" value="Премиум">
+                            Премиум
+                        </label>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    
+        <!-- Секция услуг -->
+        <section class="services-section">
+            <!-- Услуга 1 -->
+            <div class="service-card"
+                 data-type="Укладка"
+                 data-complexity="Средняя"
+                 data-price="Стандарт">
+                <h3>Трамбовка под ключ</h3>
+                <!-- <p>
+                    Профессиональная укладка плитки с подготовкой основания
+                    и установкой бордюров. Гарантия качества работ.
+                </p> -->
+                <p class="service-price">500руб</p>
+                <a href="#" class="service-button">Заказать</a>
+            </div>
+    
+            <!-- Услуга 2 -->
+            <div class="service-card"
+                 data-type="Проектирование"
+                 data-complexity="Сложная"
+                 data-price="Премиум">
+                <h3>Аренда инструментов</h3>
+                <p>
+                    <!-- Создание детального проекта благоустройства
+                    с визуализацией в 3D. Учет всех пожеланий клиента. -->
+                </p>
+                <p class="service-price">от 600-20000руб</p>
+                <a href="#" class="service-button">Заказать</a>
+            </div>
+
+            <div class="service-card"
+            data-type="Проектирование"
+            data-complexity="Сложная"
+            data-price="Премиум">
+           <h3>Аренда крана</h3>
+           <p>
+               <!-- Создание детального проекта благоустройства
+               с визуализацией в 3D. Учет всех пожеланий клиента. -->
+           </p>
+           <p class="service-price">3000руб</p>
+           <a href="#" class="service-button">Заказать</a>
+       </div>
+    
+            <!-- Добавьте больше услуг -->
+        </section>
+    </div>
+
+
+
+    <div class="main-container">
+        <!-- Блок с фильтрами и поиском -->
+        <aside class="filters-section">
+            <div class="filters-container">
+                <!-- Поиск -->
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Поиск...">
+                    <button id="search-button">Найти</button>
+                </div>
+
+                <!-- Категории -->
+                <ul class="filters">
+                    <!-- Рисунок -->
+                    <p alignе="center">
+                    <h3>Категории:</h3>
+                    </p>
+                    <li>
+
+
+                    <li>
+                        <ul class="sub-filters">
+                            <p><b>Рисунок:</b></p>
+                            <!-- <label><input type="checkbox" name="filter" value="Рисунок"> Рисунок</label> -->
+                            <ul class="sub-filters">
+                                <li><label><input type="checkbox" name="filter" value="Кирпич"> Кирпич</label></li>
+                                <li><label><input type="checkbox" name="filter" value="Ромб"> Ромб</label></li>
+                                <li><label><input type="checkbox" name="filter" value="Волна"> Волна</label></li>
+                                <li><label><input type="checkbox" name="filter" value="Клевер"> Клевер</label></li>
+                            </ul>
+                    </li>
+
+                    <!-- Цвет -->
+                    <li>
+                        <p><b>Цвет:</b></p>
+                        <!-- <label><input type="checkbox" name="filter" value="Цвет"> Цвет</label> -->
+                        <ul class="sub-filters">
+                            <li><label><input type="checkbox" name="filter" value="Серый"> Серый</label></li>
+                            <li><label><input type="checkbox" name="filter" value="Красный"> Красный</label></li>
+                            <li><label><input type="checkbox" name="filter" value="Коричневый"> Коричневый</label></li>
+                            <li><label><input type="checkbox" name="filter" value="Черный"> Черный</label></li>
+                        </ul>
+                    </li>
+
+                    <!-- Размер -->
+                    <li>
+                        <p><b>Размер:</b></p>
+                        <!-- <label><input type="checkbox" name="filter" value="Размер"> Размер</label> -->
+                        <ul class="sub-filters">
+                            <li><label><input type="checkbox" name="filter" value="300x300"> 30×30 см</label></li>
+                            <li><label><input type="checkbox" name="filter" value="400x400"> 40×40 см</label></li>
+                            <li><label><input type="checkbox" name="filter" value="500x500"> 50×50 см</label></li>
+                            <li><label><input type="checkbox" name="filter" value="600x600"> 60×60 см</label></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        
+
+        
+    
+           
+        <!-- Основной контент с карточками товаров -->
+        <!-- Карточки услуг -->
+        <main class="content">
+            
+
+
+    <div class="product-grid" id="product-grid"></div>
+    <h2>Наши товары</h2>
+    <div class="product-grid" id="product-grid">
+        <!-- Карточки товаров -->
+        <div class="product-card" data-pattern="Дерево" data-color="Серый" data-size="300x300">
+            <img src="style/card/калифорния дерево.png" alt="Товар 1">
+            <h3>Калифорния дерево</h3>
+            <p>Рисунок: Дерево</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Ромб" data-color="Серый" data-size="300x300">
+            <img src="style/card/квадрат ковер.png" alt="Товар 1">
+            <h3>Квадрат ковер</h3>
+            <p>Рисунок: Ромб</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Кирпич" data-color="Серый" data-size="300x300">
+            <img src="style/card/квадрат паркет.png" alt="Товар 1">
+            <h3>Квадрат паркет</h3>
+            <p>Рисунок: Кирпич</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Волна" data-color="Серый" data-size="300x300">
+            <img src="style/card/квадрат тучка (2).png" alt="Товар 1">
+            <h3>Квадрат тучка</h3>
+            <p>Рисунок: Волна</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Клевер" data-color="Серый" data-size="300x300">
+            <img src="style/card/клевер квадрат.png" alt="Товар 1">
+            <h3>Клевер квадрат</h3>
+            <p>Рисунок: Клевер </p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Клевер" data-color="Серый" data-size="300x300">
+            <img src="style/card/клевер квадратный.png" alt="Товар 1">
+            <h3>Клевер квадратный</h3>
+            <p>Рисунок: Клевер</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+
+        <div class="product-card" data-pattern="Клевер" data-color="Серый" data-size="300x300">
+            <img src="style/card/Клевер краковский.png" alt="Товар 1">
+            <h3>Клевер краковский</h3>
+            <p>Рисунок: Клевер</p>
+            <p>Цвет: Серый</p>
+            <p>Размер: 30×30 см</p>
+            <button class="details-button">От 640руб</button>
+        </div>
+    </div>
+    </main>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-container">
+                <div class="modal-image-container">
+                    <img id="modal-image" src="" alt="Товар">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <div class="info-grid">
+                        <!-- <p><strong>Категория:</strong></p> -->
+                        <p id="modal-category"></p>
+                        <!-- <p><strong>Подкатегория:</strong></p> -->
+                        <p id="modal-subcategory"></p>
+                        <p><strong>Размер:</strong></p>
+                        <p id="modal-size"></p>
+                        <p><strong>Цена:</strong></p>
+                        <p id="modal-price"></p>
+                    </div>
+                    <p class="modal-description" id="modal-description"></p>
+                    <button class="buy-button">Заказать</button>
+                    <!-- добавить ссылку на контакты -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Телефон: +7 (987) 868-56-00</p>
+                <p>Группа ВК: https://vk.com/uyutnydvorik56</p>
+                <p>Адрес: г. Соль-илецк, ул. Победы, д. 39</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <ul class="social-links">
+                    <li><a href="https://wa.me/89878685600" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://web.telegram.org/a/#1251920018" target="_blank">Telegram</a></li>
+                    <li><a href="https://vk.com/al_im.php?sel=-182460574" target="_blank">Вконтаке</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Уютный Дворик. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>    
+</body>
+
+</html>
